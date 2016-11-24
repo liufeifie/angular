@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eval</title>
+</head>
+<body>
+<script>
+    /*var member={username:'peter',gender:'male'};
+    console.log(typeof member);//object
+    member=JSON.stringify(member);
+    console.log(typeof member);//string
+    member=JSON.parse(member);
+    console.log(typeof member);//object*/
+    var member='{"username":"peter","gender":"male"}';
+    //var member="{'username':'peter','gender':'male'}";
+    console.log(JSON.parse(member));
+   // console.log(eval(member));
+   /* var memberStr="[{username:'peter',gender:'male'}," +
+            "{username:'tom',gender:'male'}," +
+            "{username:'mary',gender:'male'}," +
+            "{username:'lucy',gender:'female'}]";
+    var memberArr=eval(memberStr);
+    /!*member.forEach(function (_value,_index,_arr) {
+        document.write(_value+'-'+_index+_arr+'<br>')
+    });*!/
+    memberArr.forEach(function (member,index,memberArr) {
+      document.write(index+':'+member.username+':'+member.gender+'<br>');
+    });*/
+</script>
+</body>
+</html>
